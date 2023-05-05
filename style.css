@@ -1,0 +1,122 @@
+body{
+    background-color: blueviolet;
+    width: 400px;
+    height: 400px;
+}
+
+.b1{
+    background-color:#0000ff;
+    width:200px;
+    height:200px;
+    animation-duration: 5s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+#box{
+    font-weight: 400;
+    animation-name: box;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.b1 :hover{
+    background-color: #00ff00;
+}
+.b2 :hover{
+    background-color: #fff;
+}
+.b3 :hover{
+    background-color: aqua;
+}
+
+
+
+.b2{
+    background-color:#ff0000 ;
+    width:100px ;
+    height:100px ;
+    top: 50px;
+    left: 50px;
+    animation-name:sp;
+    animation-duration: 8s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+
+
+
+}
+.b3{
+    background-color: #00ff00;
+    width:50px ;
+    height:50px ;
+    top: 25px;
+    left: 25px;
+    animation-name:red1 ;
+    animation-duration: 8s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+
+@keyframes sp {
+    0%{
+        top:0px;
+        left:0px;
+        
+    }
+    25%{
+        top: 100px;
+        left: 0px;
+    }
+    50%{
+        top:100px;
+        left: 100px;
+     
+    }
+    75%{
+        top: 0px;
+        left: 100px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+    
+}
+
+
+@keyframes red1{
+0%{top:0px;
+    left:0px;
+
+}
+25%{top:50px;
+    left:0px;
+
+}
+50%{top:50px;
+    left:50px;
+
+}
+75%{top:0px;
+    left:50px;
+
+}
+100%{top:0px;
+    left:0px;
+
+}
+}
+@keyframes box{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
